@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import { log } from "./log.js"; 
 import ConfigureCounter from "./components/Counter/ConfigureCounter.js";
 
+
 function App() {
   log("<App /> rendered");
  
@@ -20,6 +21,7 @@ function App() {
       <main>
         <ConfigureCounter onSet={handleSetCount} />
         <Counter initialCount={chosenCount} />
+        <Counter initialCount={0} />
       </main>
     </>
   );
